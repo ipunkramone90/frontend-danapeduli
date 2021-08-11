@@ -1,0 +1,127 @@
+.listDonatur {
+  position: relative;
+  text-decoration: none;
+  margin: 0px 20px;
+  padding: 10px;
+  }
+  
+  .listDonatur1 {
+    display: flex;
+    width: 340px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .spaceDonatur {
+    padding-right: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Donatur1 {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+  }
+  
+  .nDonatur1 {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  
+  .pDonatur1 {
+    font-size: 14px;
+    color: #34a898;
+  }
+  
+  .tDonatur1 {
+    font-size: 12px;
+    color: #8a8aa0;
+    margin: 10px 0px 10px 0px;
+  }
+  
+  .listDonatur2 {
+    display: flex;
+    width: 340px;
+  }
+  
+  .Donatur2 {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+  }
+  
+  .nDonatur2 {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  
+  .pDonatur2 {
+    font-size: 14px;
+    color: #34a898;
+  }
+  
+  .tDonatur2 {
+    font-size: 12px;
+    color: #8a8aa0;
+    margin: 10px 0px 10px 0px;
+  }
+  
+  .listDonatur3 {
+    display: flex;
+    width: 340px;
+  }
+  
+  .Donatur3 {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+  }
+  
+  .nDonatur3 {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  
+  .pDonatur3 {
+    font-size: 14px;
+    color: #34a898;
+  }
+  
+  .tDonatur3 {
+    font-size: 12px;
+    color: #8a8aa0;
+    margin: 10px 0px 10px 0px;
+  }
+  
+  .listDonatur4 {
+    display: flex;
+    width: 340px;
+  }
+  
+  .Donatur4 {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+  }
+  
+  .nDonatur4 {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  
+  .pDonatur4 {
+    font-size: 14px;
+    color: #34a898;
+  }
+  
+  .tDonatur4 {
+    font-size: 12px;
+    color: #8a8aa0;
+    margin: 10px 0px 10px 0px;
+  }
+  

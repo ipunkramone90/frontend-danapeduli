@@ -1,0 +1,162 @@
+.containerdetaildonasi {
+    display: grid;
+    justify-content: space-around;
+    position: relative;
+    max-width: 480px;
+    width: 380px;
+    margin: 0px auto;
+    background-color: #f4f9ff;
+  }
+  
+  .container-detail-program {
+    position: relative;
+    text-decoration: none;
+    margin: 0px 20px;
+    padding: 20px;
+  }
+  
+  .container-detail {
+    text-decoration: none;
+    height: 82px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .image-program-detail {
+    margin-right: 16px;
+    object-fit: cover;
+  }
+  
+  .titlePdetail {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 82px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .titleP-detail-detail {
+    display: grid;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: left;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #201a1c;
+    display: grid;
+  }
+  
+  .value-detail {
+    position: absolute;
+    width: 117px;
+    height: 28px;
+    margin: 10px 20px 20px 20px;
+    top: 50px;
+  }
+  
+  .txtValue-detail {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #8a8aa0;
+    margin: 10px 0px 0px 0px;
+  }
+  
+  .txtTot-detail {
+    width: 69px;
+    height: 14px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #309a8d;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 0px;
+  }
+  
+  .container-form-donasi-dtl {
+    max-width: 480px;
+    margin: 0px auto;
+  }
+  
+  .detail {
+    position: relative;
+    text-decoration: none;
+    margin: 0px 20px;
+    padding: 10px;
+  }
+    
+  .container-dana {
+    position: relative;
+    text-decoration: none;
+    margin: 0px 20px;
+    padding: 10px;
+    border-style: groove;
+    border-radius: 10px;
+  }
+  
+  .style-dana {
+    margin: 0px 0px 0.75rem;
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+  }
+  
+  .style-title {
+    color: #8a8aa0;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0px 0px 20px;
+  }
+  
+  .style-name {
+    color: #201a1c;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .style-status {
+    color: #8a8aa0;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .style-status p {
+    margin-right: 170px;
+  }
+  
+  .list-update {
+    position: relative;
+    text-decoration: none;
+    margin: 0px 20px;
+    padding: 10px;
+  }
+  
+  .list-title {
+    font-size: 14px;
+    color: #201a1c;
+    line-height: 20px;
+  }
+  
+  .list-date {
+    font-size: 14px;
+    color: #34a898;
+    margin-bottom: 15px;
+  }

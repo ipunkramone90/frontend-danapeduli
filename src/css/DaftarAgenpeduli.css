@@ -1,0 +1,156 @@
+.container-reg {
+    display: grid;
+    justify-content: space-around;
+    position: relative;
+    max-width: 480px;
+    width: 380px;
+    margin: 0px auto;
+    background-color: #f4f9ff;
+    top: 20px;
+  }
+  
+  .arrow {
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: #f4f9ff;
+    color: #201a1c;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .header-title {
+    color: black;
+    background: #f4f9ff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+  }
+  
+  .header-logo {
+    max-width: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    height: 55px;
+    background: #f4f9ff;
+  }
+  
+  .form-reg{
+      margin: 0px 20px 600px;
+      padding: 5px;
+  }
+  
+  .txtRegName {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    position: absolute;
+    width: 330px;
+    height: 54px;
+    border: 1px solid #c6c6d4;
+    box-sizing: border-box;
+    border-radius: 12px;
+  }
+  
+  .txtRegEmail {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    position: absolute;
+    width: 330px;
+    height: 54px;
+    border: 1px solid #c6c6d4;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-top: 70px;
+  }
+  
+  .txtRegNo {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    position: absolute;
+    width: 330px;
+    height: 54px;
+    border: 1px solid #c6c6d4;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-top: 140px;
+  }
+  
+  .txtRegCity {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    position: absolute;
+    width: 330px;
+    height: 54px;
+    border: 1px solid #c6c6d4;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-top: 210px;
+  }
+  
+  .btnReg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    position: absolute;
+    width: 330px;
+    height: 46px;
+    background: #e1004d;
+    border: 0px solid #e1004d;
+    color: white;
+    border-radius: 12px;
+    margin-top: 300px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .atau {
+    position: absolute;
+    width: 24px;
+    height: 16px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #8a8aa0;
+    margin-top: 375px;
+    margin-left: 150px;
+  }
+  
+  .btnAsk {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    position: absolute;
+    width: 330px;
+    height: 46px;
+    background: #309a8d;
+    border: 0px solid #309a8d;
+    color: white;
+    border-radius: 12px;
+    margin-top: 420px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
