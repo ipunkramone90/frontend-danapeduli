@@ -2,10 +2,13 @@ import {React, useState} from 'react'
 import BgHeader from '../images/bg-donasi.svg';
 import '../css/FormDonasi.css'
 import * as RiIcons from "react-icons/ri";
-import Share from '../components/Share'
 
 function FormDonasi() {
-    const [buttonPopup, setButtonPopup] = useState(false);
+    //const [showShare, setShowShare] = useState(false);
+
+    //const openShare = () => {
+    //  setShowShare(prev => !prev);
+    //}
 
     const [result, setResult] = useState("");
 
@@ -16,18 +19,19 @@ function FormDonasi() {
         <div className="form-donasi">
         <img src={BgHeader} alt="bgimage"/>
         <div className="hd-text-donasi"> Total Donasi / Sedekah Terkumpul</div>
-        <h1 className="hd-nom-donasi"> Rp.200.000.000,-</h1>
+        <div className="hd-nom-donasi"> Rp.200.000.000,-</div>
 
         <form>
         <h1 className="title">Mulai Berdonasi</h1>
+        <p className="txtRate">Rp. |</p>
         <input
             className="txtNominal"
             type="text"
             id="fname"
             name="firstname"
-            placeholder="RP |"
+            placeholder="Masukkan Nominal"
             value={result}
-        />
+        ></input>
 
         <button className="nom1" onClick={handleClick} name="5000">
         5.000
@@ -71,11 +75,9 @@ function FormDonasi() {
           <span className="slider round"></span>
         </label>
         <button className="btnDonate">Donasi</button>
-        <button className='btnShare' onClick={() => setButtonPopup(true)}>
+        <button className='btnShare'>
             <RiIcons.RiShareLine className="btnShare-icon"/>
         </button>
-        
-        <Share trigger={buttonPopup} setTrigger={setButtonPopup}/>
       </form>
     </div>
     )

@@ -31,13 +31,13 @@ function DetailProgram() {
             </div>
             <br/>
             <div className="container-dana">
-                <div className="style-dana">
                 <p className="style-title">Penerima Dana</p>
+                <div className="style-wrapper">
+                <div className="style-wrapper-dt">
                 <p className="style-name">Rahmat Suryana</p>
-                <div className="style-status">
-                <p >Telah diverifikasi</p>
-                <img src={icWA} alt="ic-whatsapp" />
+                <p className="style-status">Telah diverifikasi</p>
                 </div>
+                <img src={icWA} alt="ic-whatsapp" />
                 </div>
             </div>
             <br/>

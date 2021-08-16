@@ -16,12 +16,12 @@ export const MenuItems = [
     },
     {
         title: 'Galang Dana',
-        link: '/',
+        link: 'https://wa.wizard.id/204818',
         cName: 'nav-links'
     },
     {
         title: 'Kontak Danapeduli',
-        link: '/',
+        link: 'https://wa.wizard.id/7b0638',
         cName: 'nav-links'
     }
 ]

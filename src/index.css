@@ -8,13 +8,13 @@
 
 .home, .detail-program, .daftar-agenpeduli, .kumpulan-program{
   display: grid;
-  justify-content: space-around;
+  justify-content: center;
   position: relative;
-  max-width: 480px;
-  width: 380px;
+  max-width: 370px;
   margin: 0px auto;
   background-color: #f4f9ff;
-  top: 20px;
+  top: 50px;
+  grid-template-columns: auto;
 }
 
 .about {
@@ -63,7 +63,6 @@
 .titleP {
   display: flex;
   flex-direction: column;
-  -webkit-box-pack: center;
   justify-content: center;
   height: 82px;
   font-size: 14px;
@@ -71,12 +70,7 @@
 
 .titleP a {
   padding: 0%;
-  display: flex;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  justify-content: center;
   font-size: 14px;
-  display: grid;
   background-color: transparent;
   text-decoration: none;
   text-align: left;
@@ -114,21 +108,17 @@
   font-weight: normal;
   font-size: 10px;
   line-height: 14px;
-  display: flex;
   align-items: center;
   color: #8a8aa0;
   margin: 10px 0px 0px 0px;
 }
 
 .txtTot {
-  width: 69px;
-  height: 14px;
   font-family: Nunito;
   font-style: normal;
   font-weight: bold;
   font-size: 10px;
   line-height: 14px;
-  display: flex;
   align-items: center;
   color: #309a8d;
   flex: none;
@@ -213,13 +203,13 @@
 }
 
 .container-listprogram {
+  text-decoration: none;
   height: 82px;
   display: flex;
   flex-direction: row;
-  position: relative;
-  text-decoration: none;
-  margin: 0px 20px;
-  margin-bottom: 30px;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  margin: 10px 20px;
 }
 
 .image-listprogram {
@@ -230,17 +220,22 @@
 .titleP-format {
   display: flex;
   flex-direction: column;
-  -webkit-box-pack: center;
   justify-content: center;
   height: 82px;
   font-size: 14px;
 }
 
-.titleP-format a {
-  text-decoration: none;
+.titleP-format a{
+  padding: 0%;
   font-size: 14px;
-  padding: 0px;
+  background-color: transparent;
+  text-decoration: none;
   text-align: left;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #201a1c;
 }
 
 .titleP-list {
@@ -277,14 +272,11 @@
 }
 
 .txtTot-list {
-  width: 69px;
-  height: 14px;
   font-family: Nunito;
   font-style: normal;
   font-weight: bold;
   font-size: 10px;
   line-height: 14px;
-  display: flex;
   align-items: center;
   color: #309a8d;
   flex: none;
@@ -299,7 +291,7 @@
   background-color: #f4f9ff;
   height: 470px;
   border-radius: 10px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
   color: #f4f9ff;
   position: relative;
 }

@@ -46,7 +46,9 @@ function DaftarAgenpeduli() {
 
     <button class="btnReg">Daftar Menjadi AgenPeduli</button>
     <p className="atau">Atau</p>
+    <a href="https://wa.wizard.id/7b0638">
     <button class="btnAsk">Tanya Cs Danapeduli</button>
+    </a>
     </div>
     </div>
     </div>

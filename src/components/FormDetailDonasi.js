@@ -1,27 +1,29 @@
 import {React, useState} from 'react'
 import * as RiIcons from "react-icons/ri";
-import Share from '../components/Share'
+import ModalShare from './ModalShare';
 
 function FormDetailDonasi() {
-    const [buttonPopup, setButtonPopup] = useState(false);
-
     const [result, setResult] = useState("");
 
     const handleClick = (e) => {
     setResult(result.concat(e.target.name));
     }
 
+    const [openShare,setOpenShare] = useState(false)
+    
     return (
         <div className="card-detail">
         <form>
         <h1 className="title">Mulai Berdonasi</h1>
+        <p className="txtRate">Rp. |</p>
         <input
             className="txtNominal"
             type="text"
             id="fname"
             name="firstname"
-            placeholder="RP |"
+            placeholder="Masukkan Nominal"
             value={result}
+            onChange={(result)=>this.inputChangedHandler(result)}
         />
 
         <button className="nom1" onClick={handleClick} name="5000">
@@ -66,11 +68,10 @@ function FormDetailDonasi() {
           <span className="slider round"></span>
         </label>
         <button className="btnDonate">Donasi</button>
-        <button className='btnShare' onClick={() => setButtonPopup(true)}>
+        <button className='btnShare' onClick={() => {setOpenShare(true)}}>
             <RiIcons.RiShareLine className="btnShare-icon"/>
         </button>
-        
-        <Share trigger={buttonPopup} setTrigger={setButtonPopup}/>
+        {openShare && <ModalShare/>}
       </form>
         </div>
     )

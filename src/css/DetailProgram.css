@@ -35,7 +35,7 @@
     justify-content: center;
     height: 82px;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
   }
   
   .titleP-detail-detail {
@@ -45,7 +45,7 @@
     text-align: left;
     font-family: Nunito;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 12px;
     color: #201a1c;
     display: grid;
@@ -107,20 +107,30 @@
     padding: 10px;
     border-style: groove;
     border-radius: 10px;
+    height: 120px;
   }
   
   .style-dana {
-    margin: 0px 0px 0.75rem;
-    display: flex;
-    flex: 1 1;
     flex-direction: column;
   }
   
   .style-title {
     color: #8a8aa0;
     font-size: 12px;
-    font-weight: 600;
-    margin: 0px 0px 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px
+  }
+
+  .style-wrapper{
+  display: flex;
+  flex-direction: row;
+  }
+
+  .style-wrapper-dt{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
   }
   
   .style-name {
@@ -132,16 +142,9 @@
   .style-status {
     color: #8a8aa0;
     font-size: 12px;
-    font-weight: 600;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    font-weight: 500;
   }
-  
-  .style-status p {
-    margin-right: 170px;
-  }
-  
+    
   .list-update {
     position: relative;
     text-decoration: none;
