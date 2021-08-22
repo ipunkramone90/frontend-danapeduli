@@ -6,6 +6,7 @@ import DaftarAgenpeduli from './pages/DaftarAgenpeduli';
 import KumpulanProgram from './pages/KumpulanProgram';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import Share from './components/Share';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/detailprogram" exact component={DetailProgram}/>
           <Route path="/daftaragenpeduli" exact component={DaftarAgenpeduli}/>
           <Route path="/kumpulanprogram" exact component={KumpulanProgram}/>
+          <Route path="/share" exact component={Share}/>
         </Switch>
       <Footer/>
     </Router>

@@ -6,9 +6,9 @@ function DaftarAgenpeduli() {
         <div className="daftar-agenpeduli">
         <div className="container-reg">
         <div className="about">
-            <h4>Tentang Danapeduli</h4>
+            <h4>Tentang Agenpeduli</h4>
             <p className="about-detail">
-                Danapeduli adalah platform mobile untuk donasi online paling mudah, aman dan terpercaya di Indonesia. Titipkan donasi atau langsung donasi ke program-progam yang kamu inginkan. Terafiliasi dengan Relawan Siaga yang didirikan oleh Sandiaga Uno, Letjen (Purn) Agus Sutomo dan HMBC Rikrik Rizkiyana
+                Agenpeduli adalah program agen sosial yang diselenggarakan oleh Danapeduli dengan tujuan meningkatkan Sociopreneurship di Indonesia. Dengan menjadi Agenpeduli, kamu bisa turut berkontribusi sesama dan mendapatkan reward dari setiap donasi yang diberikan oleh orang lain dengan menyebarkan link refferal. Yuk daftar menjadi Agenpeduli!
             </p>
             </div>
             <div className="form-reg">

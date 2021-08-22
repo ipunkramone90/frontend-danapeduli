@@ -134,6 +134,10 @@
   }
   
   .style-name {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
     color: #201a1c;
     font-size: 14px;
     font-weight: 600;

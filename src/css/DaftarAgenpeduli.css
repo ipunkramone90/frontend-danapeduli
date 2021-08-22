@@ -6,7 +6,6 @@
     width: 380px;
     margin: 0px auto;
     background-color: #f4f9ff;
-    top: 20px;
   }
   
   .arrow {
@@ -39,7 +38,7 @@
   }
   
   .form-reg{
-      margin: 0px 20px 600px;
+      margin: 0px 20px 500px;
       padding: 5px;
   }
   

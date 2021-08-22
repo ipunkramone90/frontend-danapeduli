@@ -1,4 +1,5 @@
 import {React, useState} from 'react'
+import '../css/FormDetailDonasi.css'
 import * as RiIcons from "react-icons/ri";
 import ModalShare from './ModalShare';
 
@@ -14,10 +15,11 @@ function FormDetailDonasi() {
     return (
         <div className="card-detail">
         <form>
-        <h1 className="title">Mulai Berdonasi</h1>
-        <p className="txtRate">Rp. |</p>
+        <h1 className="title-dt">Total Donasi Terkumpul</h1>
+        <h1 className="nominal-dt">Rp. 96.000.000,-</h1>
+        <p className="txtRate-dt">Rp. |</p>
         <input
-            className="txtNominal"
+            className="txtNominal-dt"
             type="text"
             id="fname"
             name="firstname"
@@ -26,19 +28,19 @@ function FormDetailDonasi() {
             onChange={(result)=>this.inputChangedHandler(result)}
         />
 
-        <button className="nom1" onClick={handleClick} name="5000">
+        <button className="nom1-dt" onClick={handleClick} name="5000">
         5.000
         </button>
 
-        <button className="nom2" onClick={handleClick} name="50000">
+        <button className="nom2-dt" onClick={handleClick} name="50000">
         50.000
         </button>
 
-        <button className="nom3" onClick={handleClick} name="100000">
+        <button className="nom3-dt" onClick={handleClick} name="100000">
         100.000
         </button>
 
-        <select id="mPayment" name="mPayment" className="metodP">
+        <select id="mPayment" name="mPayment" className="metodP-dt">
           <option value="Dana">DANA</option>
           <option value="GoPay">GO-PAY</option>
           <option value="LinkAja">LinkAja</option>
@@ -49,27 +51,27 @@ function FormDetailDonasi() {
         </select>
 
         <input
-          className="txtName"
+          className="txtName-dt"
           type="text"
           id="fname"
           name="fullname"
           placeholder="Nama Lengkap"
         />
         <input
-          className="txtEmail"
+          className="txtEmail-dt"
           type="text"
           id="femail"
           name="email"
           placeholder="Email"
         />
-        <p className="identity">Sembunyikan identitas (Hamba Allah)</p>
-        <label className="switch">
+        <p className="identity-dt">Sembunyikan identitas (Hamba Allah)</p>
+        <label className="switch-dt">
           <input type="checkbox" />
-          <span className="slider round"></span>
+          <span className="slider-dt round"></span>
         </label>
-        <button className="btnDonate">Donasi</button>
-        <button className='btnShare' onClick={() => {setOpenShare(true)}}>
-            <RiIcons.RiShareLine className="btnShare-icon"/>
+        <button className="btnDonate-dt">Donasi</button>
+        <button className='btnShare-dt' onClick={() => {setOpenShare(true)}}>
+            <RiIcons.RiShareLine className="btnShare-dt-icon"/>
         </button>
         {openShare && <ModalShare/>}
       </form>

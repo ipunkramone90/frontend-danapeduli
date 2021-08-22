@@ -285,15 +285,63 @@
   margin: 0px 0px;
 }
 
-.card-detail form {
+.form-complete{
   margin: 0px auto;
   width: 320px;
   background-color: #f4f9ff;
-  height: 470px;
+  height: 180px;
   border-radius: 10px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 20%);
   color: #f4f9ff;
   position: relative;
+}
+
+.complete-title{
+  background-color: transparent;
+  position: absolute;
+  margin: 15px 15px 0px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #201a1c;
+}
+
+.complete-titleNom{
+  background-color: transparent;
+  position: absolute;
+  margin: 40px 15px 0px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #201a1c;
+}
+
+.complete-nominal{
+  background-color: transparent;
+  position: absolute;
+  margin: 65px 15px 0px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #309a8d;
+}
+
+.btnTelusuri{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  position: absolute;
+  width: 289px;
+  height: 46px;
+  background: #e1004d;
+  border: 0px solid #e1004d;
+  color: white;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 120px 15px 0px;
 }
 
 .footer{

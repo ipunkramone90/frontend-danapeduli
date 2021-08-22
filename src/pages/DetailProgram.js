@@ -4,6 +4,7 @@ import FormDetailDonasi from '../components/FormDetailDonasi';
 import '../css/DetailProgram.css'
 import p1 from '../images/camp1.svg';
 import icWA from '../images/ic-whatsapp.svg';
+import icVer from '../images/ic-verified.svg';
 
 function DetailProgram() {
     return (
@@ -34,7 +35,10 @@ function DetailProgram() {
                 <p className="style-title">Penerima Dana</p>
                 <div className="style-wrapper">
                 <div className="style-wrapper-dt">
-                <p className="style-name">Rahmat Suryana</p>
+                <p className="style-name">Rahmat Suryana
+                <img src={icVer} alt="ic-verified" />
+                </p>
+               
                 <p className="style-status">Telah diverifikasi</p>
                 </div>
                 <img src={icWA} alt="ic-whatsapp" />
