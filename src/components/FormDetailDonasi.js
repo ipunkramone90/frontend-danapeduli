@@ -40,16 +40,6 @@ function FormDetailDonasi() {
         100.000
         </button>
 
-        <select id="mPayment" name="mPayment" className="metodP-dt">
-          <option value="Dana">DANA</option>
-          <option value="GoPay">GO-PAY</option>
-          <option value="LinkAja">LinkAja</option>
-          <option value="Ovo">OVO</option>
-          <option value="ShopeePay">ShopeePay</option>
-          <option value="BCA">BCA</option>
-          <option value="Mandiri">Mandiri</option>
-        </select>
-
         <input
           className="txtName-dt"
           type="text"
@@ -57,6 +47,7 @@ function FormDetailDonasi() {
           name="fullname"
           placeholder="Nama Lengkap"
         />
+
         <input
           className="txtEmail-dt"
           type="text"
@@ -64,6 +55,15 @@ function FormDetailDonasi() {
           name="email"
           placeholder="Email"
         />
+
+        <input
+          className="txtRefCode-dt"
+          type="text"
+          id="frefcode"
+          name="refcode"
+          placeholder="Kode Referal"
+        />
+
         <p className="identity-dt">Sembunyikan identitas (Hamba Allah)</p>
         <label className="switch-dt">
           <input type="checkbox" />

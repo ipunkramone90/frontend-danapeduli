@@ -7,12 +7,26 @@ import icWA from '../images/ic-whatsapp.svg';
 import icVer from '../images/ic-verified.svg';
 
 function DetailProgram() {
+    const modal = document.querySelector('.modal');
+    const previews = document.querySelectorAll(".image-program-detail img");
+
+    previews.forEach((preview) => {
+        preview.addEventListener("click",() => {
+            modal.classList.add("open")
+        })
+
+    });
+
+
     return (
         <div className="detail-program">
         <div className="containerdetaildonasi">
             <div className="container-detail-program">
                 <div className="container-detail">
                 <img  src={p1} alt="p1" className="image-program-detail"/>
+                <div className="modal">
+                <img src={p1} alt="" className="full-image"/>
+                </div>
                     <div className ="titlePdetail">
                     <p>Selamatkan Anak Terlantar di Desa Rawageni</p>
                         <div className="titleP-detail-detail">

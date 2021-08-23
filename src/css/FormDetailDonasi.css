@@ -6,7 +6,6 @@
     border-radius: 10px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
     color: #f4f9ff;
-    position: relative;
 }
   
 .title-dt{
@@ -91,7 +90,7 @@
     color: #8a8aa0;
 }
   
-.metodP-dt {
+/*.metodP-dt {
     background-color: transparent;
     display: flex;
     flex-direction: row;
@@ -106,7 +105,7 @@
     border: 1px solid #8a8aa0;
     box-sizing: border-box;
     border-radius: 10px;
-}
+}*/
   
 .txtName-dt {
     background-color: transparent;
@@ -118,7 +117,7 @@
     position: absolute;
     width: 289px;
     height: 54px;
-    margin: 269px 15px 0px;
+    margin: 203px 15px 0px;
     border: 1px solid #8a8aa0;
     box-sizing: border-box;
     border-radius: 10px;
@@ -134,7 +133,23 @@
     position: absolute;
     width: 289px;
     height: 54px;
-    margin: 334px 15px 0px;
+    margin: 268px 15px 0px;
+    border: 1px solid #8a8aa0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.txtRefCode-dt{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    position: absolute;
+    width: 289px;
+    height: 54px;
+    margin: 333px 15px 0px;
     border: 1px solid #8a8aa0;
     box-sizing: border-box;
     border-radius: 10px;
