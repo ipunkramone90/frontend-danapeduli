@@ -33,7 +33,7 @@ const Home = ({}) => {
                     <div className="container-program" key={Campaign._id}>
                     <img src={Campaign.image} alt={Campaign.title} className="image-program"/>
                         <div className ="titleP">
-                        <a href="/kumpulanprogram">{Campaign.title}</a>
+                        <a href={"/detailprogram/${Campaign._id}"}>{Campaign.title}</a>
                         <p className="txtValue">Target Donasi Tersalurkan</p>
                         <p className="txtTot">{Campaign.target}</p>
                         </div>

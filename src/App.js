@@ -17,7 +17,7 @@ function App() {
       <Navbar/>
         <Switch>
           <Route path="/" exact component={Home}/>
-          <Route path="/detailprogram" exact component={DetailProgram}/>
+          <Route path="/detailprogram/:id" exact component={DetailProgram}/>
           <Route path="/daftaragenpeduli" exact component={DaftarAgenpeduli}/>
           <Route path="/kumpulanprogram" exact component={KumpulanProgram}/>
           <Route path="/share" exact component={Share}/>

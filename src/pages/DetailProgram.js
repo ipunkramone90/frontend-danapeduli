@@ -32,10 +32,10 @@ const DetailProgram = ({ match }) => {
                 <img src={p1} alt="" className="full-image"/>
                 </div>
                     <div className ="titlePdetail">
-                    <p>Selamatkan Anak Terlantar di Desa Rawageni</p>
+                    <p>{campaign.title}</p>
                         <div className="titleP-detail-detail">
                                 <p className="txtValue-detail">Target Donasi Tersalurkan</p>
-                                <p className="txtTot-detail">Rp 98.631.944</p>       
+                                <p className="txtTot-detail">{campaign.target}</p>       
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ const DetailProgram = ({ match }) => {
             <div className="detail">
             <h4>Detail</h4>
                 <p className="txt">
-                    Odio in iaculis mauris, mattis lobortis posuere turpis porttitor dui. Volutpat pulvinar sed in non pharetra at. Tincidunt magna vel tempus neque. Pretium pellentesque dis etiam nibh fringilla quisque lorem. Ornare mattis feugiat eu aliquam scelerisque donec.
+                    {campaign.description}
                 </p>
             </div>
             <br/>
@@ -53,13 +53,15 @@ const DetailProgram = ({ match }) => {
                 <p className="style-title">Penerima Dana</p>
                 <div className="style-wrapper">
                 <div className="style-wrapper-dt">
-                <p className="style-name">Rahmat Suryana
+                <p className="style-name">{campaign.penerima}
                 <img src={icVer} alt="ic-verified" />
                 </p>
                
                 <p className="style-status">Telah diverifikasi</p>
                 </div>
+                <a href={"http://api.whatsapp.com/send?phone=${campaign.noPenerima}"}>
                 <img src={icWA} alt="ic-whatsapp" />
+                </a>
                 </div>
             </div>
             <br/>
