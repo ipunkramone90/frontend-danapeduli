@@ -2,7 +2,7 @@
     margin: 0px auto;
     width: 320px;
     background-color: #f4f9ff;
-    height: 500px;
+    height: 510px;
     border-radius: 10px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
     color: #f4f9ff;
@@ -228,6 +228,26 @@ input:checked + .slider-dt:before {
   
 .slider-dt.round:before {
     border-radius: 50%;
+}
+
+.payment-dt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    width: 206px;
+    height: 16px;
+    margin: 0px 15px 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    color: #8a8aa0;
+}
+
+.payment-dt img{
+    height: 15px;
+    width: 90px;
 }
   
 .btnDonate-dt {

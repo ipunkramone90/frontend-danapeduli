@@ -1,7 +1,8 @@
 import {React, useState} from 'react'
 import '../css/FormDetailDonasi.css'
 import * as RiIcons from "react-icons/ri";
-import ModalShare from './ModalShare';
+import {useHistory} from "react-router-dom"
+import icDurpay from '../images/ic-durpay.svg';
 
 function FormDetailDonasi() {
     const [result, setResult] = useState("");
@@ -10,7 +11,15 @@ function FormDetailDonasi() {
     setResult(result.concat(e.target.name));
     }
 
-    const [openShare,setOpenShare] = useState(false)
+    const history = useHistory();
+
+    function handleClick1() {
+      history.push("/confirmation");
+    }
+
+    function handleClick2() {
+      history.push("/share");
+    }
     
     return (
         <div className="card-detail">
@@ -69,11 +78,14 @@ function FormDetailDonasi() {
           <input type="checkbox" />
           <span className="slider-dt round"></span>
         </label>
-        <button className="btnDonate-dt">Donasi</button>
-        <button className='btnShare-dt' onClick={() => {setOpenShare(true)}}>
+        <div className="payment-dt">
+        <p>Payment powered by</p>
+        <img src={icDurpay} alt="ic-durpay"/>
+        </div>
+        <button onClick={handleClick1} className="btnDonate-dt">Donasi</button>
+        <button onClick={handleClick2} className='btnShare-dt'>
             <RiIcons.RiShareLine className="btnShare-dt-icon"/>
         </button>
-        {openShare && <ModalShare/>}
       </form>
         </div>
     )

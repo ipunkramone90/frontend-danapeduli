@@ -33,7 +33,7 @@
 .form-donasi form {
     width: 320px;
     background-color: #f4f9ff;
-    height: 470px;
+    height: 480px;
     border-radius: 10px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
     color: #f4f9ff;
@@ -200,7 +200,7 @@
     line-height: 16px;
     color: #8a8aa0;
 }
-  
+
 .switch {
     position: relative;
     display: inline-block;
@@ -261,6 +261,27 @@ input:checked + .slider:before {
   
 .slider.round:before {
     border-radius: 50%;
+}
+
+.payment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    width: 206px;
+    height: 16px;
+    margin: 0px 15px 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    color: #8a8aa0;
+}
+
+.payment img{
+    height: 15px;
+    width: 90px;
+    position: relative;
 }
   
 .btnDonate {

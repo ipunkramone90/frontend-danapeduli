@@ -7,6 +7,8 @@ import KumpulanProgram from './pages/KumpulanProgram';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Share from './components/Share';
+import Confirmation from './components/Confirmation';
+import Referral from './components/Referral';
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
           <Route path="/daftaragenpeduli" exact component={DaftarAgenpeduli}/>
           <Route path="/kumpulanprogram" exact component={KumpulanProgram}/>
           <Route path="/share" exact component={Share}/>
+          <Route path="/confirmation" exact component={Confirmation}/>
+          <Route path="/referral" exact component={Referral}/>
         </Switch>
       <Footer/>
     </Router>

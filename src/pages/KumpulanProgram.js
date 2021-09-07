@@ -1,76 +1,22 @@
 import React from 'react'
 import p1 from '../images/camp1.svg';
+import Campaign from "../data/CampaignsData";
 
 function KumpulanProgram() {
     return (
         <div className="kumpulan-program">
-            
-                <div className="container-listprogram">
-                <img  src={p1} alt="p1" className="image-listprogram"/>
+        {Campaign.map((Campaign, index) => (
+            <div className="container-listprogram" key={Campaign._id}>
+                <img  src={Campaign.image} alt={Campaign.title} className="image-listprogram"/>
                 <div className ="titleP-format">
-                <a href="/detailprogram">Selamatkan Anak Terlantar di Desa Rawageni</a>
+                <a href="/detailprogram">{Campaign.title}</a>
                 <div className="titleP-list">
                 <p className="txtValue-list">Target Donasi Tersalurkan</p>
-                <p className="txtTot-list">Rp 98.631.944</p>       
+                <p className="txtTot-list">{Campaign.target}</p>       
                 </div>
                 </div>      
                 </div>
-
-                <div className="container-listprogram">
-                <img  src={p1} alt="p1" className="image-listprogram"/>
-                <div className ="titleP-format">
-                <a href="/detailprogram">Selamatkan Anak Terlantar di Desa Rawageni</a>
-                <div className="titleP-list">
-                <p className="txtValue-list">Target Donasi Tersalurkan</p>
-                <p className="txtTot-list">Rp 98.631.944</p>       
-                </div>
-                </div>      
-                </div>
-
-                <div className="container-listprogram">
-                <img  src={p1} alt="p1" className="image-listprogram"/>
-                <div className ="titleP-format">
-                <a href="/detailprogram">Selamatkan Anak Terlantar di Desa Rawageni</a>
-                <div className="titleP-list">
-                <p className="txtValue-list">Target Donasi Tersalurkan</p>
-                <p className="txtTot-list">Rp 98.631.944</p>       
-                </div>
-                </div>      
-                </div>
-
-                <div className="container-listprogram">
-                <img  src={p1} alt="p1" className="image-listprogram"/>
-                <div className ="titleP-format">
-                <a href="/detailprogram">Selamatkan Anak Terlantar di Desa Rawageni</a>
-                <div className="titleP-list">
-                <p className="txtValue-list">Target Donasi Tersalurkan</p>
-                <p className="txtTot-list">Rp 98.631.944</p>       
-                </div>
-                </div>      
-                </div>
-
-                <div className="container-listprogram">
-                <img  src={p1} alt="p1" className="image-listprogram"/>
-                <div className ="titleP-format">
-                <a href="/detailprogram">Selamatkan Anak Terlantar di Desa Rawageni</a>
-                <div className="titleP-list">
-                <p className="txtValue-list">Target Donasi Tersalurkan</p>
-                <p className="txtTot-list">Rp 98.631.944</p>       
-                </div>
-                </div>      
-                </div>
-
-                <div className="container-listprogram">
-                <img  src={p1} alt="p1" className="image-listprogram"/>
-                <div className ="titleP-format">
-                <a href="/detailprogram">Selamatkan Anak Terlantar di Desa Rawageni</a>
-                <div className="titleP-list">
-                <p className="txtValue-list">Target Donasi Tersalurkan</p>
-                <p className="txtTot-list">Rp 98.631.944</p>       
-                </div>
-                </div>      
-                </div>
-            
+                ))}
         </div>
     )
 }

@@ -5,8 +5,11 @@ import '../css/DetailProgram.css'
 import p1 from '../images/camp1.svg';
 import icWA from '../images/ic-whatsapp.svg';
 import icVer from '../images/ic-verified.svg';
+import campaigns from '../data/CampaignsData'
 
-function DetailProgram() {
+const DetailProgram = ({ match }) => {
+    const campaign = campaigns.find((c) => c._id === match.params.id)
+    
     const modal = document.querySelector('.modal');
     const previews = document.querySelectorAll(".image-program-detail img");
 
@@ -20,10 +23,11 @@ function DetailProgram() {
 
     return (
         <div className="detail-program">
+        <div>{campaign.penerima}</div>
         <div className="containerdetaildonasi">
             <div className="container-detail-program">
                 <div className="container-detail">
-                <img  src={p1} alt="p1" className="image-program-detail"/>
+                <img  src={campaign.image} alt={campaign.title} className="image-program-detail"/>
                 <div className="modal">
                 <img src={p1} alt="" className="full-image"/>
                 </div>

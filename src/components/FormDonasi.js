@@ -1,20 +1,27 @@
 import {React, useState} from 'react'
 import BgHeader from '../images/bg-donasi.svg';
+import icDurpay from '../images/ic-durpay.svg';
 import '../css/FormDonasi.css'
 import * as RiIcons from "react-icons/ri";
+import {useHistory} from "react-router-dom"
 
 function FormDonasi() {
-    //const [showShare, setShowShare] = useState(false);
-
-    //const openShare = () => {
-    //  setShowShare(prev => !prev);
-    //}
-
     const [result, setResult] = useState("");
 
     const handleClick = (e) => {
     setResult(result.concat(e.target.name));
     }
+
+    const history = useHistory();
+
+    function handleClick1() {
+      history.push("/confirmation");
+    }
+
+    function handleClick2() {
+      history.push("/share");
+    }
+
     return (
         <div className="form-donasi">
         <img src={BgHeader} alt="bgimage"/>
@@ -69,13 +76,17 @@ function FormDonasi() {
           placeholder="Kode Referal"
         />
 
-        <p className="identity">Sembunyikan identitas (Hamba Allah)</p>
+        <p className="identity">Sembunyikan identitas (Hamba Allah)</p>    
         <label className="switch">
           <input type="checkbox" />
           <span className="slider round"></span>
         </label>
-        <button className="btnDonate">Donasi</button>
-        <button className='btnShare'>
+        <div className="payment">
+        <p>Payment powered by</p>
+        <img src={icDurpay} alt="ic-durpay"/>
+        </div>
+        <button onClick={handleClick1} className="btnDonate">Donasi</button>
+        <button onClick={handleClick2} className='btnShare'>
             <RiIcons.RiShareLine className="btnShare-icon"/>
         </button>
       </form>

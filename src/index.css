@@ -6,7 +6,7 @@
   background-color: #f4f9ff;
 }
 
-.home, .detail-program, .daftar-agenpeduli, .kumpulan-program{
+.home, .detail-program, .daftar-agenpeduli, .kumpulan-program, .share{
   display: grid;
   justify-content: center;
   position: relative;
@@ -46,7 +46,6 @@
 
 .container-program {
   text-decoration: none;
-  height: 82px;
   display: flex;
   flex-direction: row;
   -webkit-box-pack: start;
@@ -204,12 +203,12 @@
 
 .container-listprogram {
   text-decoration: none;
-  height: 82px;
+  height: 100px;
   display: flex;
   flex-direction: row;
   -webkit-box-pack: start;
   justify-content: flex-start;
-  margin: 10px 20px;
+  padding: 10px 20px;
 }
 
 .image-listprogram {
@@ -344,11 +343,144 @@
   margin: 120px 15px 0px;
 }
 
+
+.container-confirm {
+  position: relative;
+  text-decoration: none;
+  max-width: 370px;
+  width: 100%;
+  margin: 0px auto;
+  top: 60px;
+  padding: 0px 16px 80px;
+  min-height: calc(100vh - 60px);
+  background-color: #f4f9ff;
+}
+
+.confirm-image {
+  width: 100%;
+  margin: 0px auto;
+  border-radius: 12px;
+}
+
+.confirm-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #201a1c;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.confirm-txt1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #8a8aa0;
+  text-align: center;
+  padding: 0px 20px 60px 20px;
+}
+
+.confirm-txt2 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a8aa0;
+  text-align: center;
+}
+
+.btnAllCampaign{
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  position: absolute;
+  width: 300px;
+  height: 46px;
+  background: #e1004d;
+  border: 0px solid #e1004d;
+  color: white;
+  border-radius: 12px;
+  margin-top: 25px;
+  margin-left: 18px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ref-container{
+  display: grid;
+  justify-content: center;
+  position: relative;
+  max-width: 370px;
+  margin: 0px auto;
+  background-color: #f4f9ff;
+  top: 50px;
+  grid-template-columns: auto;
+}
+
+.ref-wrap{
+  display: grid;
+  justify-content: space-around;
+  position: relative;
+  max-width: 480px;
+  width: 370px;
+  margin: 0px auto;
+  background-color: #f4f9ff;
+
+}
+
+.ref-form{
+  padding: 5px;
+}
+
+.txtRefNumber{
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  width: 299px;
+  height: 54px;
+  border: 1px solid #c6c6d4;
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.ref-btnLink{
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  width: 299px;
+  height: 46px;
+  background: #e1004d;
+  border: 0px solid #e1004d;
+  color: white;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.ref-btnCopy{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  width: 299px;
+  height: 46px;
+  background: #309a8d;
+  border: 0px solid #309a8d;
+  color: white;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .footer{
   text-align: center;
-  margin: 60px auto;
+  margin: 100px auto;
   width: 320px;
-  font-style: SemiBold;
   font-size: 12px;
   line-height: 16px;
   line-height: 100%;
